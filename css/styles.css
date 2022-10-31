@@ -1,0 +1,257 @@
+:root {
+    --primary-text-color: #212121;
+    --title-text-color: #2196F3;
+    --accent-text-color: #757575;
+    --primary-bck-color: #F5F5F5;
+    --button-fons-color: #188CE8;
+    --white-fons-color: #FFFFFF;
+    --white-second-color: #F5F4FA;
+    --black-fons-color: #2F303A;
+    --logo-text-color: #000000;
+}
+/*------CSS для сторінки СТУДІЯ---------*/
+.page {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--white-fons-color);
+    font-size: 14px;
+    color: var(--primary-text-color);
+    letter-spacing: 0.03em;
+    }
+    .page-header {
+        background-color: var(--white-fons-color);
+    }
+/*Logo link color*/
+.logo-link {
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.14;
+    color: var(--title-text-color);
+}
+.logo-header {
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.14; 
+    color: var(--logo-text-color);
+}
+/*Прибрати всі списки*/
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+/*Site nav color*/
+.site-nav .link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--primary-text-color);
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+    color: var(--title-text-color);
+}
+.site-nav .link.current {
+color: var(--title-text-color);
+}
+.info-nav a {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--accent-text-color);
+}
+.info-nav a:hover,
+.info-nav a:focus {
+color: var(--title-text-color);
+}
+/*Hero*/
+.hero {
+    background-color: var(--black-fons-color);
+}
+.hero-title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--white-fons-color);
+}
+/*Кнопка heder*/
+button {
+    font-family: inherit;
+    border: none;
+}
+.button {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    color: var(--white-fons-color);
+    background-color: var(--primary-bck-color);
+    cursor: pointer;
+}
+.button.primary {
+    color: var(--white-fons-color);
+    background-color: var(--title-text-color);
+}
+.button.primary:hover,
+.button.primary:active {
+    background-color: var(--button-fons-color);
+}
+/*content-title*/
+.content {
+
+}
+.content-text {
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--primary-text-color);
+}
+.content-subtitle .title {
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--accent-text-color);
+}
+/*section-title*/
+.section {
+
+}
+.section-title {
+    font-size: 36px;
+    line-height: 1.67;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+}
+.section-uptitle {
+
+}
+/*Features-title*/
+.features {
+    background-color: var(--white-second-color);
+}
+.features-title {
+    font-size: 36px;
+    line-height: 1.67;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+}
+.features-uptitle {
+    background-color: var(--white-fons-color);
+}
+.features-subtitle .items {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+}
+.features-subtitle .text-title {
+    font-size: 16px;
+    text-align: center;
+    line-height: 1.18;
+    letter-spacing: 0.03em;
+    color: var(--accent-text-color);
+}
+/*Footer*/
+.contact {
+    background-color: var(--black-fons-color);
+}
+.heder-link {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--white-fons-color);
+}
+.contact-title {
+    
+}
+.contact-subtitle {
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--white-fons-color);
+}
+.contact-uptitle {
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+}
+.contact-items .contact-uptitle:hover,
+.contact-items .contact-uptitle:focus {
+    color: var(--title-text-color);
+}
+/*Прибираємо курсив*/
+a {
+    font-style: normal;
+}
+/*------CSS для сторінки ПОРТФОЛІО---------*/
+/*За макето #F5F5F5 а насправді #FFFFFF*/
+.menu-btg {
+
+}
+/*Список моя сторінка*/
+.button-title {
+
+}
+.button-second {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+    background-color: var(--white-second-color);
+} 
+.button-second:hover,
+.button-second:active {
+    color: var(--white-fons-color);
+    background-color: var(--title-text-color);
+}
+/*Список Контекстне меню*/
+.benefits {
+
+}
+.benefits-title {
+
+}
+.benefits-subtitle {
+    
+}
+.benefits-items{
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--primary-text-color);
+}
+.benefits-uptitle {
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.03em;
+    color: var(--accent-text-color);
+}
+
+
+
+
+/*Колір основного тексту сторінки #212121;*/
+
+
+/*Другорядний колір тексту на сторінці #757575;*/
+
+
+/*Білий колір #FFFFFF;*/
+
+
+/*Акцент #2196F3;*/
+
+
+/*Другорядний колір Футер сайту rgba(255, 255, 255, 0.6);*/
+
+/*Стилі для сторінки portfolio.html*/
