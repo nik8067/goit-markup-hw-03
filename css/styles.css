@@ -108,6 +108,7 @@ button {
 
 }
 .content-text {
+    font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
@@ -214,6 +215,10 @@ a {
     color: var(--white-fons-color);
     background-color: var(--title-text-color);
 }
+.button-second:focus {
+    color: var(--button-fons-color);
+    background-color: var(--title-text-color);
+}
 /*Список Контекстне меню*/
 .benefits {
 
@@ -236,8 +241,6 @@ a {
     letter-spacing: 0.03em;
     color: var(--accent-text-color);
 }
-
-
 
 
 /*Колір основного тексту сторінки #212121;*/
