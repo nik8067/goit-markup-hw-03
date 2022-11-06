@@ -8,9 +8,11 @@
     --white-second-color: #F5F4FA;
     --black-fons-color: #2F303A;
     --logo-text-color: #000000;
+    --card-content: #EEEEEE;
 }
 /*------CSS для сторінки СТУДІЯ---------*/
 .page {
+    margin: 0;
     font-family: 'Roboto', sans-serif;
     background-color: var(--white-fons-color);
     font-size: 14px;
@@ -21,7 +23,7 @@
     margin-left: 15px;
     margin-right: 15px;
     margin: 0 auto;
-    width: 1200px;
+    width: 1230px;
     outline: 2px solid tomato;
     }
 .page-header {
@@ -46,6 +48,7 @@
     color: var(--logo-text-color);
 }
 /*Прибрати всі списки*/
+/* Сброс марджинов для загаловков и тестовых блоков */
 h1,
 h2,
 h3,
@@ -54,8 +57,11 @@ h5,
 h6,
 p {
 	margin-top: 0;
+    padding-top: 0;
 }
 ul {
+    padding: 0;
+    margin: 0;
     list-style: none;
 }
 a {
@@ -89,8 +95,7 @@ a {
 color: var(--title-text-color);
 }
 .info-nav {
-    padding: 0;
-    margin: 0;
+   
 }
 .info-nav a {
     font-weight: 500;
@@ -101,17 +106,16 @@ color: var(--title-text-color);
 }
 .info-nav a:hover,
 .info-nav a:focus {
-color: var(--title-text-color);
+    color: var(--title-text-color);
 }
 /*Hero*/
 .hero {
+    padding: 200px 0;;
     background-color: var(--black-fons-color);
     text-align: center;
 }
 .hero-title {
-    margin-top: 0;
     margin-bottom: 30px;
-    font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
     letter-spacing: 0.06em;
@@ -124,8 +128,10 @@ button {
     border: none;
 }
 .button {
-    border-radius: 4px;
+    display: inline-block;
     padding: 10px 32px;
+    border-radius: 4px;
+    min-width: 216px;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
@@ -147,12 +153,11 @@ button {
 
 }
 .content-title {
-margin-top: 0;
-margin-bottom: 94px;
-text-align: center;
+
 }
 .content-subtitle {
-
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 .content-text {
     font-size: 14px;
@@ -168,30 +173,45 @@ text-align: center;
 }
 /*section-title*/
 .section {
-
+    padding-bottom: 94px;
 }
 .section-title {
-    margin-top: 0;
+    margin-bottom: 50px;
     font-size: 36px;
     line-height: 1.67;
     letter-spacing: 0.03em;
+    text-align: center;
     color: var(--primary-text-color);
 }
 .section-uptitle {
-
+padding-bottom: 94px;
 }
 /*Features-title*/
 .features {
+    padding-top: 94px;
+    padding-bottom: 94px;
     background-color: var(--white-second-color);
 }
 .features-title {
     font-size: 36px;
     line-height: 1.67;
     letter-spacing: 0.03em;
+    text-align: center;
     color: var(--primary-text-color);
 }
 .features-uptitle {
+    padding-top: 30px;
+    padding-bottom: 30px;
     background-color: var(--white-fons-color);
+}
+.items {
+
+}
+.text-title {
+    margin-bottom: 10px;
+}
+.features-subtitle {
+
 }
 .features-subtitle .items {
     font-weight: 500;
@@ -210,6 +230,8 @@ text-align: center;
 }
 /*Footer*/
 .contact {
+    padding-top: 60px;
+    padding-bottom: 60px;
     background-color: var(--black-fons-color);
 }
 .heder-link {
@@ -221,7 +243,7 @@ text-align: center;
     color: var(--white-fons-color);
 }
 .contact-title {
-    
+    padding-top: 20px;;
 }
 .contact-subtitle {
     line-height: 1.71;
@@ -237,6 +259,12 @@ text-align: center;
 .contact-items .contact-uptitle:focus {
     color: var(--title-text-color);
 }
+.contact-items .contact-subtitle {
+    padding-bottom: 9px;
+}
+.content-items .contact-uptitle {
+    padding-bottom: 9px;
+}
 /*Прибираємо курсив*/
 a {
     font-style: normal;
@@ -244,13 +272,18 @@ a {
 /*------CSS для сторінки ПОРТФОЛІО---------*/
 /*За макето #F5F5F5 а насправді #FFFFFF*/
 .menu-btg {
-
+padding-top: 94px;
+padding-bottom: 94px;
 }
 /*Список моя сторінка*/
 .button-title {
 
 }
+.button-list {
+ margin-bottom: 50px;
+}
 .button-second {
+    padding: 6px 22px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
@@ -278,10 +311,16 @@ a {
     
 }
 .benefits-items{
+    margin-bottom: 4px;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
     color: var(--primary-text-color);
+}
+.card-content {
+    padding: 20px 24px;
+    border: 1px solid var(--card-content);
+    border-top: 0;
 }
 .benefits-uptitle {
     font-size: 16px;
