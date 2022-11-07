@@ -144,6 +144,8 @@ color: var(--title-text-color);
     text-align: center;
 }
 .hero-title {
+    width: 696px;
+    margin: 0 auto;
     margin-bottom: 30px;
     font-size: 44px;
     line-height: 1.36;
@@ -185,13 +187,14 @@ button {
 
 }
 .content-subtitle {
+    justify-content: center;
     display: flex;
     gap: 30px;
     padding-top: 94px;
     padding-bottom: 94px;
 }
-.content-subtitle .item {
-    width: 270px;
+.item {
+    flex-basis: calc((100% - 90px) / 4);
 }
 .content-text {
     font-size: 14px;
@@ -207,7 +210,7 @@ button {
 }
 /**--------section-title Чим ми займаємось*/
 .section {
-
+    
 }
 .section-title {
     margin-bottom: 50px;
@@ -218,10 +221,17 @@ button {
     color: var(--primary-text-color);
 }
 .section-uptitle {
-padding-bottom: 94px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding-bottom: 94px;
+}
+.section-title .image-title {
+    flex-basis: calc((100% - 90px) / 4);
 }
 /**-------------Features-title Наша команда*/
 .features {
+    text-align: center;
     padding-top: 94px;
     padding-bottom: 94px;
     background-color: var(--white-second-color);
@@ -234,10 +244,16 @@ padding-bottom: 94px;
     text-align: center;
     color: var(--primary-text-color);
 }
-.features-uptitle {
-    padding-top: 30px;
-    padding-bottom: 30px;
+.features-subtitle {
     background-color: var(--white-fons-color);
+}
+.features-subtitle .benefits-uptitle {
+    flex-basis: calc((100% - 90px) / 4);
+}
+.items-list {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 .items {
 
@@ -246,7 +262,9 @@ padding-bottom: 94px;
     margin-bottom: 10px;
 }
 .features-subtitle {
-
+    display: flex;
+    justify-content: center;
+    gap: 30px;
 }
 .features-subtitle .items {
     font-weight: 500;
@@ -350,6 +368,7 @@ a {
 .benefits-title {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 .benefits-title .benefits-subtitle {
     display: flex;
