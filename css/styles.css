@@ -60,8 +60,8 @@ a {
 .page-header {
     background-color: var(--white-fons-color);
     }
-    .page .page-header {
-        border-bottom: 1px solid #ECECEC;
+.page .page-header {
+    border-bottom: 1px solid #ECECEC;
     }
 .main-nav {
     display: flex;
